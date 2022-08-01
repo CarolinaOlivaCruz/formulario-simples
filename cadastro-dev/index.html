@@ -20,25 +20,26 @@
                         <p id="caption">Complete suas informações</p>
                         <br>
                     </div>
-                    <div class="field">
-                        <label for="name">Nome</label>
-                        <input type="text" name="name" id="name" placeholder="Nome" required="true">
-                    </div>
-                    <div class="field">
-                        <label for="last name">Sobrenome</label>
-                        <input type="text" name="last name" id="last name" placeholder="Sobrenome" required="true">
-                    </div>
                 </section>
 
                 <section>
-                    <div class="field">
+                    <div class="containerCaixa">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Nome" required="true">
+
+                        <label for="last name">Sobrenome</label>
+                        <input type="text" name="last name" id="last name" placeholder="Sobrenome" required="true">
+                </section>
+
+                <section>
+                    <div class="containerCaixa">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required="true">
                     </div>
                 </section>
 
                 <section>
-                    <div class="field">
+                    <div class="containerCaixa">
                         <label for="devweb">De qual lado da aplicação você desenvolve?</label>
                         <label>
                             <input type="radio" name="devweb" value="frontend" checked>Front-end
@@ -51,7 +52,7 @@
                         </label>
                     </div>
 
-                    <div class="field">
+                    <div class="containerCaixa">
                         <label for="seniority">Senioridade</label>
                         <select name="seniority" id="seniority">
                             <option selected disabled value="">Selecione</option>
@@ -60,7 +61,7 @@
                             <option value="senior">Senior</option>
                         </select>
                     </div>
-                    
+
                     <div id="check">
                         <label for="webtechnology">Selecione as tecnologias que você utiliza:</label>
                         <br><br>
@@ -82,11 +83,11 @@
                 </section>
 
                 <section>
-                    <div class="field">
+                    <div class="containerCaixa">
                         <br>
                         <label for="experience">Conte um pouco sobre sua experiência:</label>
                         <textarea name="experience" id="experience" rows="6" style="width: 26em"
-                            required="true">Digite aqui...</textarea>qqq,0
+                            required="true">Digite aqui...</textarea>
                     </div>
                 </section>
 
@@ -95,7 +96,6 @@
                 </section>
             </fieldset>
         </form>
-
     </main>
 
 </body>

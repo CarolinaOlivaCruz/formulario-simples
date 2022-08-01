@@ -31,22 +31,22 @@ input, select, textarea, button {
     border-radius: 5px;
 }
 
-.field {
+.containerCaixa {
     margin-bottom: 1em;
 }
 
-.field label {
+.containerCaixa label {
     margin-bottom: 0.2em;
     color: #380061;
     display: block;
 }
 
-fieldset .container .field {
+fieldset .container .containerCaixa {
     float: left;
     margin-right: 1em;
 }
 
-.field input[type="text"], .field input[type="email"], .field select, .field textarea {
+.containerCaixa input[type="text"], .containerCaixa input[type="email"], .containerCaixa select, .containerCaixa textarea {
     padding: 0.2em;
     border: 1px solid #8f49c2;
     box-shadow: 2px 2px 2px #347ddd;
