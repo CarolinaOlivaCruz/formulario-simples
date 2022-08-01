@@ -11,88 +11,92 @@
 
 <body>
 
-    <form>
-        <div>
-            <h1 id="title">Cadastro de DEVs</h1>
-            <p id="caption">Complete suas informações</p>
-            <br>
-        </div>
+    <main>
+        <form>
+            <fieldset class="container">
+                <section>
+                    <div>
+                        <h1 id="title">Cadastro de DEVs</h1>
+                        <p id="caption">Complete suas informações</p>
+                        <br>
+                    </div>
+                    <div class="field">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Nome" required="true">
+                    </div>
+                    <div class="field">
+                        <label for="last name">Sobrenome</label>
+                        <input type="text" name="last name" id="last name" placeholder="Sobrenome" required="true">
+                    </div>
+                </section>
 
-        <fieldset class="container">
-            <div class="field">
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name" placeholder="Nome" required="true">
-            </div>
+                <section>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required="true">
+                    </div>
+                </section>
 
-            <div class="field">
-                <label for="last name">Sobrenome</label>
-                <input type="text" name="last name" id="last name" placeholder="Sobrenome" required="true">
-            </div>
-        </fieldset>
+                <section>
+                    <div class="field">
+                        <label for="devweb">De qual lado da aplicação você desenvolve?</label>
+                        <label>
+                            <input type="radio" name="devweb" value="frontend" checked>Front-end
+                        </label>
+                        <label>
+                            <input type="radio" name="devweb" value="backend">Back-end
+                        </label>
+                        <label>
+                            <input type="radio" name="devweb" value="fulstack">Fulstack
+                        </label>
+                    </div>
 
-        <div class="field">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required="true">
-        </div>
+                    <div class="field">
+                        <label for="seniority">Senioridade</label>
+                        <select name="seniority" id="seniority">
+                            <option selected disabled value="">Selecione</option>
+                            <option value="junior">Junior</option>
+                            <option value="pleno">Pleno</option>
+                            <option value="senior">Senior</option>
+                        </select>
+                    </div>
+                    
+                    <div id="check">
+                        <label for="webtechnology">Selecione as tecnologias que você utiliza:</label>
+                        <br><br>
+                        <input type="checkbox" id="webtechnology1" name="webtechnology1" value="HTML">
+                        <label for="webtechnology1">HTML</label>
+                        <input type="checkbox" id="webtechnology2" name="webtechnology2" value="CSS">
+                        <label for="webtechnology2">CSS</label>
+                        <input type="checkbox" id="webtechnology3" name="webtechnology3" value="Javascript">
+                        <label for="webtechnology3">Javascript</label>
+                        <input type="checkbox" id="webtechnology4" name="webtechnology4" value="PHP">
+                        <label for="webtechnology4">PHP</label>
+                        <input type="checkbox" id="webtechnology5" name="webtechnology5" value="C#">
+                        <label for="webtechnology5">C#</label>
+                        <input type="checkbox" id="webtechnology6" name="webtechnology6" value="Python">
+                        <label for="webtechnology6">Python</label>
+                        <input type="checkbox" id="webtechnology7" name="webtechnology7" value="Java">
+                        <label for="webtechnology7">Java</label>
+                    </div>
+                </section>
 
-        <div class="field">
-            <label for="devweb">De qual lado da aplicação você desenvolve?</label>
-            <label>
-                <input type="radio" name="devweb" value="frontend" checked>Front-end
-            </label>
-            <label>
-                <input type="radio" name="devweb" value="backend">Back-end
-            </label>
-            <label>
-                <input type="radio" name="devweb" value="fulstack">Fulstack
-            </label>
-        </div>
+                <section>
+                    <div class="field">
+                        <br>
+                        <label for="experience">Conte um pouco sobre sua experiência:</label>
+                        <textarea name="experience" id="experience" rows="6" style="width: 26em"
+                            required="true">Digite aqui...</textarea>qqq,0
+                    </div>
+                </section>
 
-        <div class="field">
-            <label for="seniority">Senioridade</label>
-            <select name="seniority" id="seniority">
-                <option selected disabled value="">Selecione</option>
-                <option value="junior">Junior</option>
-                <option value="pleno">Pleno</option>
-                <option value="senior">Senior</option>
-            </select>
-        </div>
+                <section>
+                    <button class="button" type="submit" required="true">Enviar</button>
+                </section>
+            </fieldset>
+        </form>
 
-        <fieldset class="container">
-            <div id="check">
-                <label for="webtechnology">Selecione as tecnologias que você utiliza:</label>
-                <br><br>
-                <input type="checkbox" id="webtechnology1" name="webtechnology1" value="HTML">
-                <label for="webtechnology1">HTML</label>
-
-                <input type="checkbox" id="webtechnology2" name="webtechnology2" value="CSS">
-                <label for="webtechnology2">CSS</label>
-
-                <input type="checkbox" id="webtechnology3" name="webtechnology3" value="Javascript">
-                <label for="webtechnology3">Javascript</label>
-
-                <input type="checkbox" id="webtechnology4" name="webtechnology4" value="PHP">
-                <label for="webtechnology4">PHP</label>
-
-                <input type="checkbox" id="webtechnology5" name="webtechnology5" value="C#">
-                <label for="webtechnology5">C#</label>
-
-                <input type="checkbox" id="webtechnology6" name="webtechnology6" value="Python">
-                <label for="webtechnology6">Python</label>
-
-                <input type="checkbox" id="webtechnology7" name="webtechnology7" value="Java">
-                <label for="webtechnology7">Java</label>
-            </div>
-        </fieldset>
-
-        <div class="field">
-            <br>
-            <label for="experience">Conte um pouco sobre sua experiência:</label>
-            <textarea name="experience" id="experience" rows="6" style="width: 26em" required="true">Digite aqui...</textarea>
-        </div>
-
-        <button class="button" type="submit"required="true">Enviar</button>
-    </form>
+    </main>
 
 </body>
 
