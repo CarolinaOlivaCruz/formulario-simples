@@ -31,9 +31,13 @@ input, select, textarea, button {
     border-radius: 5px;
 }
 
+input:hover, select:hover, textarea:hover{
+background-color: #d4b5eb;
+}
 .containerCaixa {
     margin-bottom: 1em;
 }
+
 
 .containerCaixa label {
     margin-bottom: 0.2em;
@@ -50,8 +54,7 @@ fieldset .container .containerCaixa {
     padding: 0.2em;
     border: 1px solid #8f49c2;
     box-shadow: 2px 2px 2px #347ddd;
-    display: block;
-    
+    display: block;    
 }
 
 .button {
